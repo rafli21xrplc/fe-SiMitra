@@ -107,7 +107,7 @@
     <div class="layout-container">
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
-              <img width="200" class="" src="../../assets/content/uname-logo.png" srcset="https://copygen.themenio.com/images/logo-green2x.png 2x" alt="ApfilLMKM" />
+              <img width="200" class="" src="./assets/content/uname-logo.png" srcset="https://copygen.themenio.com/images/logo-green2x.png 2x" alt="ApfilLMKM" />
 
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
                 <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
@@ -219,8 +219,23 @@
                   <span class="text-muted fw-light">GALERI</span>
                 </h4>
               </div>
-              <div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galeri"> Tambah </button>
+              <div class="d-flex flex-wrap gap-2">
+                <div class="mb-2">
+                  <input type="text" class="form-control"  id="flatpickr-range" />
+                </div>
+                <div class="mb-2">
+                  <select class="form-control" name="" style="width: 100%;">
+                    <option value="">name</option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <button type="submit" class="btn btn-success w-100">
+                    <span class="d-none d-sm-inline-block">Search</span>
+                  </button>
+                </div>
+                <div class="btn-group mb-2">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galeri">Tambah</button>
+                </div>
               </div>
             </div>
             <div class="row">
