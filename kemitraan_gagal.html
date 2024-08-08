@@ -135,16 +135,16 @@
         </nav>
 
         <div class="content-wrapper">
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3">
-                <div>
-                  <h4 class="py-3 mb-4">
-                    <span class="text-muted fw-light">Gagal Bermitra</span>
-                  </h4>
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <div class="btn-group mb-2">
-                    <button
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3">
+              <div>
+                <h4 class="py-3 mb-4">
+                  <span class="text-muted fw-light">Kemitraan</span>
+                </h4>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <div class="btn-group mb-2">
+                  <button
                   type="button"
                   class="btn btn-warning text-white d-flex align-items-center"
                   data-bs-toggle="modal"
@@ -152,8 +152,7 @@
                 >
                   Cari <i class="fas fa-search ms-2"></i>
                 </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createUMKM">Tambah <i class="fas fa-plus ms-2"></i></button>
-                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createUMKM">Tambah <i class="fas fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
@@ -217,178 +216,9 @@
           </div>
           <div class="content-backdrop fade"></div>
         </div>
-      </div>
-    </div>
 
-      <div class="modal fade" id="createUMKM" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="createUMKMLabel">UMKM</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="createUMKMForm" class="row g-3" onsubmit="return false">
-                <div class="col-12">
-                    <label class="form-label" for="modalCreateUMKMName">Nama Usaha</label>
-                    <input type="text" id="modalCreateUMKMName" name="modalCreateUMKMName" class="form-control" placeholder="Nama Usaha" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMScale">Skala Usaha</label>
-                    <select id="modalCreateUMKMScale" name="modalCreateUMKMScale" class="form-select">
-                        <option value="">Pilih Skala Usaha</option>
-                        <option value="Mikro">Mikro</option>
-                        <option value="Kecil">Kecil</option>
-                        <option value="Menengah">Menengah</option>
-                    </select>
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMCategory">Kategori</label>
-                    <input type="text" id="modalCreateUMKMCategory" name="modalCreateUMKMCategory" class="form-control" placeholder="Kategori" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMKBLI">KBLI</label>
-                    <input type="text" id="modalCreateUMKMKBLI" name="modalCreateUMKMKBLI" class="form-control" placeholder="KBLI" />
-                </div>
-                
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMEmployees">Jumlah Tenaga Kerja</label>
-                    <input type="number" id="modalCreateUMKMEmployees" name="modalCreateUMKMEmployees" class="form-control" placeholder="Jumlah Tenaga Kerja" />
-                </div>
-            
-                <div class="col-12">
-                    <label class="form-label" for="modalCreateUMKMAddress">Alamat</label>
-                    <input type="text" id="modalCreateUMKMAddress" name="modalCreateUMKMAddress" class="form-control" placeholder="Alamat Lengkap" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMCity">Kabupaten/Kota</label>
-                    <input type="text" id="modalCreateUMKMCity" name="modalCreateUMKMCity" class="form-control" placeholder="Kabupaten/Kota" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMOwner">Nama Pemilik Usaha</label>
-                    <input type="text" id="modalCreateUMKMOwner" name="modalCreateUMKMOwner" class="form-control" placeholder="Nama Pemilik Usaha" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMPhone">Nomor Kontak</label>
-                    <input type="text" id="modalCreateUMKMPhone" name="modalCreateUMKMPhone" class="form-control" placeholder="Nomor Kontak" />
-                </div>
-            
-                <div class="col-12 col-md-6">
-                    <label class="form-label" for="modalCreateUMKMEmail">Email</label>
-                    <input type="email" id="modalCreateUMKMEmail" name="modalCreateUMKMEmail" class="form-control" placeholder="email@contoh.com" />
-                </div>
-            
-                <div class="col-12">
-                    <label class="form-label" for="modalCreateUMKMCertificate">Sertifikat (jika ada)</label>
-                    <input type="file" id="modalCreateUMKMCertificate" name="modalCreateUMKMCertificate" class="form-control" />
-                </div>
-            
-                <div class="col-12">
-                    <label class="form-label" for="modalCreateUMKMDescription">Keterangan</label>
-                    <textarea id="modalCreateUMKMDescription" name="modalCreateUMKMDescription" class="form-control" rows="3" placeholder="Keterangan tambahan"></textarea>
-                </div>
-            
-                <div class="col-12 d-flex justify-content-end">
-                  <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                    <button type="submit" class="btn btn-primary ">Submit</button>
-                </div>
-            </form>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="modal fade" id="editUMKM" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="createUMKMLabel">Update UMKM</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="updateUMKMForm" class="row g-3" onsubmit="return false">
-                        <div class="col-12">
-                            <label class="form-label" for="modalUpdateUMKMName">Nama Usaha</label>
-                            <input type="text" id="modalUpdateUMKMName" name="modalUpdateUMKMName" class="form-control" value="Toko Kelontong Makmur" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMScale">Skala Usaha</label>
-                            <select id="modalUpdateUMKMScale" name="modalUpdateUMKMScale" class="form-select">
-                                <option value="">Pilih Skala Usaha</option>
-                                <option value="Mikro" selected>Mikro</option> 
-                                <option value="Kecil">Kecil</option>
-                                <option value="Menengah">Menengah</option>
-                            </select>
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMCategory">Kategori</label>
-                            <input type="text" id="modalUpdateUMKMCategory" name="modalUpdateUMKMCategory" class="form-control" value="Ritel" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMKBLI">KBLI</label>
-                            <input type="text" id="modalUpdateUMKMKBLI" name="modalUpdateUMKMKBLI" class="form-control" value="47111 (Perdagangan eceran di toko non-spesialis)" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMEmployees">Jumlah Tenaga Kerja</label>
-                            <input type="number" id="modalUpdateUMKMEmployees" name="modalUpdateUMKMEmployees" class="form-control" value="3" />
-                        </div>
-    
-                        <div class="col-12">
-                            <label class="form-label" for="modalUpdateUMKMAddress">Alamat</label>
-                            <input type="text" id="modalUpdateUMKMAddress" name="modalUpdateUMKMAddress" class="form-control" value="Jl. Mawar No. 12, Jakarta Pusat" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMCity">Kabupaten/Kota</label>
-                            <input type="text" id="modalUpdateUMKMCity" name="modalUpdateUMKMCity" class="form-control" value="Jakarta Pusat" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMOwner">Nama Pemilik Usaha</label>
-                            <input type="text" id="modalUpdateUMKMOwner" name="modalUpdateUMKMOwner" class="form-control" value="Bapak Budi" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMPhone">Nomor Kontak</label>
-                            <input type="text" id="modalUpdateUMKMPhone" name="modalUpdateUMKMPhone" class="form-control" value="081234567890" />
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <label class="form-label" for="modalUpdateUMKMEmail">Email</label>
-                            <input type="email" id="modalUpdateUMKMEmail" name="modalUpdateUMKMEmail" class="form-control" value="makmur@gmail.com" />
-                        </div>
-    
-                        <div class="col-12">
-                            <label class="form-label" for="modalUpdateUMKMCertificate">Sertifikat (jika ada)</label>
-                            <input type="file" id="modalUpdateUMKMCertificate" name="modalUpdateUMKMCertificate" class="form-control" />
-                        </div>
-    
-                        <div class="col-12">
-                            <label class="form-label" for="modalUpdateUMKMDescription">Keterangan</label>
-                            <textarea id="modalUpdateUMKMDescription" name="modalUpdateUMKMDescription" class="form-control" rows="3">Menyediakan kebutuhan sehari-hari dengan harga terjangkau.</textarea>
-                        </div>
-    
-                        <div class="col-12 d-flex justify-content-end">
-                          <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-  
+    </div>  
       <!-- Include necessary scripts -->
       <script src="./assets/vendor/js/bootstrap.js"></script>
       <script src="./assets/vendor/js/menu.js"></script>
@@ -529,5 +359,174 @@
         </form>
       </div>
     </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="createUMKM" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createUMKMLabel">UMKM</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="createUMKMForm" class="row g-3" onsubmit="return false">
+          <div class="col-12">
+              <label class="form-label" for="modalCreateUMKMName">Nama Usaha</label>
+              <input type="text" id="modalCreateUMKMName" name="modalCreateUMKMName" class="form-control" placeholder="Nama Usaha" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMScale">Skala Usaha</label>
+              <select id="modalCreateUMKMScale" name="modalCreateUMKMScale" class="form-select">
+                  <option value="">Pilih Skala Usaha</option>
+                  <option value="Mikro">Mikro</option>
+                  <option value="Kecil">Kecil</option>
+                  <option value="Menengah">Menengah</option>
+              </select>
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMCategory">Kategori</label>
+              <input type="text" id="modalCreateUMKMCategory" name="modalCreateUMKMCategory" class="form-control" placeholder="Kategori" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMKBLI">KBLI</label>
+              <input type="text" id="modalCreateUMKMKBLI" name="modalCreateUMKMKBLI" class="form-control" placeholder="KBLI" />
+          </div>
+          
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMEmployees">Jumlah Tenaga Kerja</label>
+              <input type="number" id="modalCreateUMKMEmployees" name="modalCreateUMKMEmployees" class="form-control" placeholder="Jumlah Tenaga Kerja" />
+          </div>
+      
+          <div class="col-12">
+              <label class="form-label" for="modalCreateUMKMAddress">Alamat</label>
+              <input type="text" id="modalCreateUMKMAddress" name="modalCreateUMKMAddress" class="form-control" placeholder="Alamat Lengkap" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMCity">Kabupaten/Kota</label>
+              <input type="text" id="modalCreateUMKMCity" name="modalCreateUMKMCity" class="form-control" placeholder="Kabupaten/Kota" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMOwner">Nama Pemilik Usaha</label>
+              <input type="text" id="modalCreateUMKMOwner" name="modalCreateUMKMOwner" class="form-control" placeholder="Nama Pemilik Usaha" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMPhone">Nomor Kontak</label>
+              <input type="text" id="modalCreateUMKMPhone" name="modalCreateUMKMPhone" class="form-control" placeholder="Nomor Kontak" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <label class="form-label" for="modalCreateUMKMEmail">Email</label>
+              <input type="email" id="modalCreateUMKMEmail" name="modalCreateUMKMEmail" class="form-control" placeholder="email@contoh.com" />
+          </div>
+      
+          <div class="col-12">
+              <label class="form-label" for="modalCreateUMKMCertificate">Sertifikat (jika ada)</label>
+              <input type="file" id="modalCreateUMKMCertificate" name="modalCreateUMKMCertificate" class="form-control" />
+          </div>
+      
+          <div class="col-12">
+              <label class="form-label" for="modalCreateUMKMDescription">Keterangan</label>
+              <textarea id="modalCreateUMKMDescription" name="modalCreateUMKMDescription" class="form-control" rows="3" placeholder="Keterangan tambahan"></textarea>
+          </div>
+      
+          <div class="col-12 d-flex justify-content-end">
+            <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+              <button type="submit" class="btn btn-primary ">Submit</button>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editUMKM" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="createUMKMLabel">Update UMKM</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="updateUMKMForm" class="row g-3" onsubmit="return false">
+                  <div class="col-12">
+                      <label class="form-label" for="modalUpdateUMKMName">Nama Usaha</label>
+                      <input type="text" id="modalUpdateUMKMName" name="modalUpdateUMKMName" class="form-control" value="Toko Kelontong Makmur" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMScale">Skala Usaha</label>
+                      <select id="modalUpdateUMKMScale" name="modalUpdateUMKMScale" class="form-select">
+                          <option value="">Pilih Skala Usaha</option>
+                          <option value="Mikro" selected>Mikro</option> 
+                          <option value="Kecil">Kecil</option>
+                          <option value="Menengah">Menengah</option>
+                      </select>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMCategory">Kategori</label>
+                      <input type="text" id="modalUpdateUMKMCategory" name="modalUpdateUMKMCategory" class="form-control" value="Ritel" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMKBLI">KBLI</label>
+                      <input type="text" id="modalUpdateUMKMKBLI" name="modalUpdateUMKMKBLI" class="form-control" value="47111 (Perdagangan eceran di toko non-spesialis)" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMEmployees">Jumlah Tenaga Kerja</label>
+                      <input type="number" id="modalUpdateUMKMEmployees" name="modalUpdateUMKMEmployees" class="form-control" value="3" />
+                  </div>
+
+                  <div class="col-12">
+                      <label class="form-label" for="modalUpdateUMKMAddress">Alamat</label>
+                      <input type="text" id="modalUpdateUMKMAddress" name="modalUpdateUMKMAddress" class="form-control" value="Jl. Mawar No. 12, Jakarta Pusat" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMCity">Kabupaten/Kota</label>
+                      <input type="text" id="modalUpdateUMKMCity" name="modalUpdateUMKMCity" class="form-control" value="Jakarta Pusat" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMOwner">Nama Pemilik Usaha</label>
+                      <input type="text" id="modalUpdateUMKMOwner" name="modalUpdateUMKMOwner" class="form-control" value="Bapak Budi" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMPhone">Nomor Kontak</label>
+                      <input type="text" id="modalUpdateUMKMPhone" name="modalUpdateUMKMPhone" class="form-control" value="081234567890" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                      <label class="form-label" for="modalUpdateUMKMEmail">Email</label>
+                      <input type="email" id="modalUpdateUMKMEmail" name="modalUpdateUMKMEmail" class="form-control" value="makmur@gmail.com" />
+                  </div>
+
+                  <div class="col-12">
+                      <label class="form-label" for="modalUpdateUMKMCertificate">Sertifikat (jika ada)</label>
+                      <input type="file" id="modalUpdateUMKMCertificate" name="modalUpdateUMKMCertificate" class="form-control" />
+                  </div>
+
+                  <div class="col-12">
+                      <label class="form-label" for="modalUpdateUMKMDescription">Keterangan</label>
+                      <textarea id="modalUpdateUMKMDescription" name="modalUpdateUMKMDescription" class="form-control" rows="3">Menyediakan kebutuhan sehari-hari dengan harga terjangkau.</textarea>
+                  </div>
+
+                  <div class="col-12 d-flex justify-content-end">
+                    <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                  </div>
+              </form>
+          </div>
+      </div>
   </div>
 </div>
