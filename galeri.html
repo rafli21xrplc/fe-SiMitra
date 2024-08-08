@@ -102,167 +102,128 @@
     </style>
   </head>
 
-  <body>
-    <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-        <!-- Sidebar -->
-        <aside
-          id="layout-menu"
-          class="layout-menu menu-vertical menu bg-menu-theme"
+<body>
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+              <img width="200" class="" src="../../assets/content/uname-logo.png" srcset="https://copygen.themenio.com/images/logo-green2x.png 2x" alt="ApfilLMKM" />
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+                <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+              </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+              <li class="menu-item">
+                <a href="dashboard.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-home"></i>
+                  <div data-i18n="Support">Dashboard</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                  <div data-i18n="Layouts">Data Master</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="UMKM.html" class="menu-link">
+                      <i class="menu-icon tf-icons ti ti-businessplan"></i>
+                      <div data-i18n="Collapsed menu">UMKM</div>
+                    </a>
+                  </li>
+                  <li class="menu-item active">
+                    <a href="PMA.html" class="menu-link">
+                      <i class="menu-icon tf-icons ti ti-office-building"></i>
+                      <div data-i18n="Collapsed menu">Usaha Besar</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="kemitraan.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-link"></i>
+                  <div data-i18n="Support">Kemitraan</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="kemitraan_berhasil.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-link"></i>
+                  <div data-i18n="Support">Berhasil Bermitra</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="kemitraan_gagal.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-link"></i>
+                  <div data-i18n="Support">Gagal Bermitra</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="contact.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-checklist"></i>
+                  <div data-i18n="Support">contact</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="galeri.html" class="menu-link">
+                  <i class="menu-icon tf-icons ti ti-checklist"></i>
+                  <div data-i18n="Support">galeri</div>
+                </a>
+              </li>
+            </ul>
+          </aside>
+      <div class="layout-page">
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar"
         >
-          <div class="app-brand demo">
-            <img
-              width="200"
-              src="./assets/content/uname-logo.png"
-              srcset="https://copygen.themenio.com/images/logo-green2x.png 2x"
-              alt="SiMitra"
-            />
-            <a
-              href="javascript:void(0);"
-              class="layout-menu-toggle menu-link text-large ms-auto"
-            >
-              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+          <div
+            class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+          >
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="ti ti-menu-2 ti-sm"></i>
             </a>
           </div>
-          <div class="menu-inner-shadow"></div>
-          <ul class="menu-inner py-1">
-            <li class="menu-item">
-              <a href="dashboard.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-home"></i>
-                <div data-i18n="Support">Dashboard</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-                <div data-i18n="Layouts">Data Master</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="UMKM.html" class="menu-link">
-                    <i class="menu-icon tf-icons ti ti-businessplan"></i>
-                    <div data-i18n="Collapsed menu">UMKM</div>
-                  </a>
-                </li>
-                <li class="menu-item active">
-                  <a href="PMA.html" class="menu-link">
-                    <i class="menu-icon tf-icons ti ti-office-building"></i>
-                    <div data-i18n="Collapsed menu">Usaha Besar</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="kemitraan.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-link"></i>
-                <div data-i18n="Support">Kemitraan</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="kemitraan_berhasil.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-link"></i>
-                <div data-i18n="Support">Berhasil Bermitra</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="kemitraan_gagal.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-link"></i>
-                <div data-i18n="Support">Gagal Bermitra</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="contact.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-checklist"></i>
-                <div data-i18n="Support">Contact</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="galeri.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-checklist"></i>
-                <div data-i18n="Support">Galeri</div>
-              </a>
-            </li>
-          </ul>
-        </aside>
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a
+                  class="nav-link dropdown-toggle hide-arrow"
+                  href="javascript:void(0);"
+                  data-bs-toggle="dropdown"
+                >
+                  <div class="avatar avatar-online">
+                    <img src="../../assets/content/profile.gif" alt class="h-auto rounded-circle" />
 
-        <!-- Content Wrapper -->
-        <div class="layout-page">
-          <nav
-            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-            id="layout-navbar"
-          >
-            <div
-              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
-            >
-              <a
-                class="nav-item nav-link px-0 me-xl-4"
-                href="javascript:void(0)"
-              >
-                <i class="ti ti-menu-2 ti-sm"></i>
-              </a>
-            </div>
-            <div
-              class="navbar-nav-right d-flex align-items-center"
-              id="navbar-collapse"
-            >
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a
-                    class="nav-link dropdown-toggle hide-arrow"
-                    href="javascript:void(0);"
-                    data-bs-toggle="dropdown"
-                  >
-                    <div class="avatar avatar-online">
-                      <img
-                        src="./assets/content/profile.gif"
-                        alt="Profile"
-                        class="h-auto rounded-circle"
-                      />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="index.html">
-                        <i class="ti ti-logout me-2 ti-sm"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="auth-login-cover.html">
+                      <i class="ti ti-logout me-2 ti-sm"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-          <div class="content-wrapper">
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <div
-              class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3"
-            >
+        <div class="content-wrapper">
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
               <div>
                 <h4 class="py-3 mb-4">
                   <span class="text-muted fw-light">GALERI</span>
                 </h4>
               </div>
-              <div class="d-flex flex-wrap gap-2">
-                <div class="mb-2">
-                  <input type="text" class="form-control"  id="flatpickr-range" />
-                </div>
-                <div class="mb-2">
-                  <select class="form-control" name="" style="width: 100%;">
-                    <option value="">name</option>
-                  </select>
-                </div>
-                <div class="mb-2">
-                  <button type="submit" class="btn btn-success w-100">
-                    <span class="d-none d-sm-inline-block">Search</span>
-                  </button>
-                </div>
-                <div class="btn-group mb-2">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galeri">Tambah</button>
-                </div>
+              <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galeri"> Tambah </button>
               </div>
             </div>
-              <div class="row">
+            <div class="row">
                 <div class="row g-4">
                   <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="card">
@@ -321,41 +282,41 @@
           </div>
         </div>
       </div>
+  
+  
+      <div class="modal fade" id="galeri" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createCompanyLabel">Create Company Information</h5> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="createCompanyForm" class="row g-3" onsubmit="return false">
+                        <div class="col-12">
+                            <label class="form-label" for="title">Title</label> 
+                            <input type="text" id="title" name="title" class="form-control" placeholder="Masukkan judul" />
+                        </div>
+    
+                        <div class="col-12">
+                            <label class="form-label" for="description">Description</label>
+                            <textarea id="description" name="description" class="form-control" rows="3" placeholder="Masukkan deskripsi"></textarea>
+                        </div>
+    
+                        <div class="col-12">
+                            <label class="form-label" for="file_img">File Gambar</label>
+                            <input type="file" id="file_img" name="file_img" class="form-control" accept="image/*" /> 
+                        </div>
+    
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            <button type="submit" class="btn btn-primary ">Submit</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="modal fade" id="galeri" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="createCompanyLabel">Create Company Information</h5> 
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form id="createCompanyForm" class="row g-3" onsubmit="return false">
-                      <div class="col-12">
-                          <label class="form-label" for="title">Title</label> 
-                          <input type="text" id="title" name="title" class="form-control" placeholder="Masukkan judul" />
-                      </div>
-  
-                      <div class="col-12">
-                          <label class="form-label" for="description">Description</label>
-                          <textarea id="description" name="description" class="form-control" rows="3" placeholder="Masukkan deskripsi"></textarea>
-                      </div>
-  
-                      <div class="col-12">
-                          <label class="form-label" for="file_img">File Gambar</label>
-                          <input type="file" id="file_img" name="file_img" class="form-control" accept="image/*" /> 
-                      </div>
-  
-                      <div class="col-12 d-flex justify-content-end">
-                          <button type="reset" class="btn btn-label-secondary me-sm-3 me-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                          <button type="submit" class="btn btn-primary ">Submit</button> 
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
 
 
     <div class="modal fade" id="edit" tabindex="-1" aria-hidden="true">

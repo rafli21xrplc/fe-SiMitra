@@ -135,29 +135,25 @@
         </nav>
 
         <div class="content-wrapper">
-          <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3">
-              <div>
-                <h4 class="py-3 mb-4">
-                  <span class="text-muted fw-light">Berhasil Bermitra</span>
-                </h4>
-              </div>
-              <div class="d-flex flex-wrap gap-2">
-                <div class="mb-2">
-                  <input type="text" class="form-control"  id="flatpickr-range" />
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3">
+                <div>
+                  <h4 class="py-3 mb-4">
+                    <span class="text-muted fw-light">Berhasil Bermitra</span>
+                  </h4>
                 </div>
-                <div class="mb-2">
-                  <select class="form-control" name="" style="width: 100%;">
-                    <option value="">name</option>
-                  </select>
-                </div>
-                <div class="mb-2">
-                  <button type="submit" class="btn btn-success w-100">
-                    <span class="d-none d-sm-inline-block">Search</span>
-                  </button>
-                </div>
-                <div class="btn-group mb-2">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createUMKM">Tambah</button>
+                <div class="d-flex flex-wrap gap-2">
+                  <div class="btn-group mb-2">
+                    <button
+                  type="button"
+                  class="btn btn-warning text-white d-flex align-items-center"
+                  data-bs-toggle="modal"
+                  data-bs-target="#search-perusahaan"
+                >
+                  Cari <i class="fas fa-search ms-2"></i>
+                </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createUMKM">Tambah <i class="fas fa-plus ms-2"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -399,3 +395,139 @@
       <script src="./assets/js/main.js"></script>
     </body>
 </html>
+
+
+
+<div class="modal fade" id="search-perusahaan" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchLabel">CARI PERUSAHAAN</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form id="searchForm" class="row g-3" onsubmit="return false">
+          <div class="col-12">
+            <label class="form-label" for="modalCreateCompanyName"
+              >Nama Usaha</label
+            >
+            <input
+              type="text"
+              id="modalCreateCompanyName"
+              name="modalCreateCompanyName"
+              class="form-control"
+              placeholder="Nama Usaha"
+            />
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" for="modalCreateCompanyNIB">NIB</label>
+            <input
+              type="text"
+              id="modalCreateCompanyNIB"
+              name="modalCreateCompanyNIB"
+              class="form-control"
+              placeholder="NIB"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateCompanyKBLI">KBLI</label>
+            <input
+              type="text"
+              id="modalCreateCompanyKBLI"
+              name="modalCreateCompanyKBLI"
+              class="form-control"
+              placeholder="KBLI"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateCompanyOwner"
+              >Nama Pemilik</label
+            >
+            <input
+              type="text"
+              id="modalCreateCompanyOwner"
+              name="modalCreateCompanyOwner"
+              class="form-control"
+              placeholder="Nama Pemilik"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateCompanyPhone"
+              >Nomor Kontak</label
+            >
+            <input
+              type="text"
+              id="modalCreateCompanyPhone"
+              name="modalCreateCompanyPhone"
+              class="form-control"
+              placeholder="Nomor Kontak"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateCompanyEmail"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="modalCreateCompanyEmail"
+              name="modalCreateCompanyEmail"
+              class="form-control"
+              placeholder="email@contoh.com"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateKecamatan"
+              >Kecamatan</label
+            >
+            <input
+              type="text"
+              id="modalCreateKecamatan"
+              name="modalCreateKecamatan"
+              class="form-control"
+              placeholder="Kecamatan"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalCreateKota">Kota</label>
+            <input
+              type="text"
+              id="modalCreateKota"
+              name="modalCreateKota"
+              class="form-control"
+              placeholder="Kota"
+            />
+          </div>
+
+          <small class="text-danger"
+            >*Masukkan data ke dalam kolom di atas untuk mencari
+            informasi.</small
+          >
+
+          <div class="col-12 d-flex justify-content-end">
+            <button
+              type="reset"
+              class="btn btn-label-secondary me-sm-3 me-1"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary">Cari</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
